@@ -124,10 +124,10 @@ $(function() {
         });
 
         it('content has changed', function() {
-            Array.from(feed.children).forEach(fucntion(entry, index) {
+            Array.from(feed.children).forEach(fucntion(entry, index))
                 console.log(entry.innerText, firstFeed[index], entry.innerText === firstFeed[index]);
                 expect(entry.innerText === firstFeed[index]).toBe(false);
-            });
+            
         });
     });
 
